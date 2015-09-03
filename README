@@ -1,0 +1,8 @@
+# to build the bsize tool that generates the CSV data:
+g++ -o bsize bsize.cc
+
+# then generate the CSV data
+./bsize > bip101.csv
+
+# then run gnuplot to create the charts:
+gnuplot bip101.gnuplot
